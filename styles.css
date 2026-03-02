@@ -1,5 +1,4 @@
 body {
-    background-color: rgb(rgb(184, 25, 25));
     background-color: #800000;
     color:rgb( 16, 15, 15);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -7,58 +6,199 @@ body {
 
 h1 {
     background-color: black;
-    color:rgb(251, 248, 248);
+    color: #fbf8f8;
 }
 
-
-header {
-    
-    color: rgb(rgb(11, 11, 11));
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
-} 
 
 h2 {
      color: rgb(rgb(9, 9, 9))
 }
 
-nav a {
-    color: rgb(10, 10, 10);
-    text-decoration: none;
-    margin: 0 10px;
+h4{
+    color:#090909;
+    font-weight: bold;
+    border-left: 4px solid #333;
+    padding-left: 15px;
+}
 
-}
-nav a:hover{
-    text-decoration: underline;
-}
+
 main {
     padding: 20px;
     max-width: 850px;
     margin: 0 auto;
+    min-height: calc(100vh-200px);
+    background-color: transparent;
 }
+
+p{
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #0f0f0f;
+}
+
+card{
+    background-color: #fff !important;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border-color: #800000;
+
+}
+
+.card-body{
+    padding: 25px;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color:#800000;
+    display: flex;
+    align-items: center;
+}
+
+.card-text{
+    color: #333;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+navbar{
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white !important;
+}
+
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white !important;
+}
+
+.navbar-brand span{
+    color: #ffd700 !important;
+}
+
+.nav-link{
+    color: #f0f0f0;
+    font-weight: 500;
+    margin: 0 10px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover{
+    color: #ffd700;
+}
+
+.nav-link:hover{
+    color: #ffd700;
+}
+
+.nav-link.active{
+    color: #ffd700;
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background: #ffd700;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after{
+    width: 80%;
+}
+
+
 
 main img{
     max-width: 100%;
     height: auto;
     display: block;
     margin: 20px 0;
-    ;
 }
 
 footer{
     background-color: rgb(9, 9, 9);
     color: white;
     text-align: centre;
-    padding: 10px;
-    position: fixed;
+    padding: 15px 0;
     width: 100%;
+    border-top: 2px solid #ffd700;
+    margin-top: 50px;
+}
+
+footer p{
+    color: white;
+    margin: 0;
+    font-size: 0.95rem;
 }
 
 img{
     border: 5px solid rgb(rgb(153, 149, 149));
     border-style: none;
     border-radius: 10px;
+    max-width: 100%;
+    height: auto;
 }
-p{
-    font-size: medium 1.1em;
+main img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
 }
+
+.badge.bg-warning{
+    background-color: #ffd700 !important;
+    color:#4a0000 !important;
+    font-weight:bold;
+    padding: 8px 12px;
+}
+
+@media(max-width: 768px){
+    .navbar-brand{
+        font-size: 1.2rem;
+
+    }
+
+    h4{
+        font-size: 1.5rem;
+    }
+    main{
+        padding: 15px;
+        max-width: 100%;
+    }
+    .card{
+        margin-top: 20px;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
+main{
+    animation: fadeIn 0.8s ease-out;
+}
+
+.text-centre{
+    text-align: center;
+}
+ 
