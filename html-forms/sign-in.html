@@ -157,6 +157,11 @@
             document.getElementById('responseMessage').style.display = 'block';
             //Clear the form
             document.querySelector('form').reset();
+            //Redirect to the home page after 3 seconds
+            setTimeout(function() {
+                window.location.href = '../index.html';
+            }, 3000);
+            
             //Prevent page refresh
             return false;
         }
