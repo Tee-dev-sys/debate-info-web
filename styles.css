@@ -35,7 +35,39 @@ p{
     line-height: 1.8;
     color: #0f0f0f;
 }
-
+.table-custom{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5x 15px rgba(0, 0, 0, 0.2) ;
+    border-collapse: collapse;
+    width: 100%;
+}
+.table-custom:thead{
+    background-color: #0f0f0f;
+    color: white;
+}
+.table-custom th{
+    padding: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid #ffd700;
+    background-color: #0f0f0f;
+    color: white;
+}
+.table-custom td{
+    padding: 12px 15px;
+    color: #333;
+    vertical-align: middle;
+    border: 1px solid  #333;
+}
+.table-bordered{
+    border: 2px solid #800000;
+}
+.table-bordered th{
+    border: 1px solid #cccccc;
+}
+.table-custom tbody tr:hover{
+    background-color: #fff3e0;
+}
 card{
     background-color: #fff !important;
     border: 1px solid #333;
